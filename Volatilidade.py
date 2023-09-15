@@ -26,6 +26,7 @@ for ticker in tickers_list:
 markov_volatility_df = pd.DataFrame(markov_volatility)
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Volatilidade Markov-Switching Autoregressive de Ações"),
